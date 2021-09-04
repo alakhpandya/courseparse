@@ -1,0 +1,118 @@
+@import url(/css/fonts.css);
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    /*  Colors  */
+    --box-bg: #ffffff;
+    --brand: rgb(8, 8, 90);
+}
+
+a{
+   text-decoration: none;
+}
+
+.brand{
+   margin: 20px;
+   font-family: algeria;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.brand a{
+   color: var(--brand);
+   text-shadow: 2px 0px white;
+}
+
+.form-container{
+    /* border: 2px solid red; */
+    margin: 10vh 25vw;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px black;
+    height: 60vh;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.left{
+    /* border:2px solid green; */
+    padding: 12vh 1vw;
+    width: 50%;
+    font-family: livvic;
+}
+
+.left h3{
+    margin: 0 3vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.left p{
+    margin: 0 3vw;
+    font-size: 1.5rem;
+}
+
+.right{
+    /* border: 2px solid yellow; */
+    width: 50%;
+    padding: 2vh 1vw;
+}
+
+.right .form-label, .right .form-check-label{
+    font-size: 1.2rem;
+}
+
+.forget-pwd{
+    display: block;
+}
+
+.signin-btn{
+    margin: 20px 0px;
+    width: 100%;
+}
+
+/* Media Query */
+@media (max-width: 770px){
+    .form-container{
+        /* border: 2px solid red; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 10px 30px black;
+        height: 100vh;
+        width: 90vw;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .left{
+        /* border:2px solid green; */
+        padding: 6vh 3vw;
+        width: 100%;
+        font-family: livvic;
+    }
+    .left h3{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    .left p{
+        font-size: 1.5rem;
+    }
+
+    .right{
+        /* border: 2px solid yellow; */
+        width: 100%;
+        padding: 0% 3vw;
+    }
+    .signin-btn{
+        margin: 20px 0px;
+        width: 100%;
+    }
+}
